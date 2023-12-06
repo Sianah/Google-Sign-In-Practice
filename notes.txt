@@ -1,0 +1,7 @@
+Steps
+1. npx create-expo-app appName
+2. cd appName
+3. npx expo install expo-auth-session expo-crypto expo-web-browser react-native-web react-dom 
+ @expo/webpack-config @react-native-async-storage/async-storage
+     
+    
