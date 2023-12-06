@@ -22,13 +22,19 @@ const [request, response, promptAsync] = Google.useAuthRequest({ //how this hook
   iosClientId: "508324923582-qtv5h7tf8eub87iett2ek12hu6nflpv2.apps.googleusercontent.com",
   webClientId: "508324923582-colqt82dke17aa8n8n51msqric08j9sm.apps.googleusercontent.com"
 
-  })
+  });
 
 // 5.
 async function handleSignInWithGoogle(){
   const user = await AsyncStorage.getItem("@user");
   if (!user){
+    //8.
+    if (response?.type === "success"){
 
+    // 7.
+    await getUserInfo(response.authentication.accessToken);
+    // 7.
+  }
   }
   else{
     setUserInfo(JSON.parse(user));
@@ -36,7 +42,7 @@ async function handleSignInWithGoogle(){
 }
 
 //6.
-const getUserInfo = async(token) => {
+const getUserInfo = async(token) => { //get back response that contains the information of the user
   if(!token) return;
   try{
     const response = await fetch(
@@ -47,11 +53,11 @@ const getUserInfo = async(token) => {
       }
     );
     const user = await response.json();
-    await AsyncStorage.setItem("@user", JSON.stringify(user));
+    await AsyncStorage.setItem("@user", JSON.stringify(user)); // saves user locally so we have them in user key
     setUserInfo(user);
   }
   catch(error){
-    
+
   }
 }
 
