@@ -3,6 +3,7 @@
 //android client ID - 508324923582-ncuan2li0la71d0oe8c317lg7l3d8g6d.apps.googleusercontent.com
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import * as WebBrowser from "expo-web-browser"; // is a browser inside the application
 
 export default function App() {
   return (

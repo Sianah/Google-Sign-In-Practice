@@ -61,7 +61,8 @@ Steps
              - paste 'someNumber' into 'SHA-1 certificate fingerprint in google cloud"
              - select "Create"
              - copy Client ID and paste is as a comment in app.js
-             
+
+5. In app.js, import "import * as WebBrowser from "expo-web-browser";"
 
 
 
