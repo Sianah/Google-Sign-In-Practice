@@ -40,6 +40,30 @@ Steps
             - need bundle ID
                 - run npx expo prebuild
                 - keep package name as default that appears once ran so just hit 'enter' 
+                - if ios doesn't appear, just type in "bundleIdentifier": "com.itsasma11world.tutorialgoogle" 
+                within app.json ("com.itsasma11world.tutorialgoogle" is the default name)
+                - go to app.json, under ios find "bundleIdentifier": "defaultName" --> copy and paste that into 
+                'Bundle ID' on google cloud
+            - select 'Create' --> copy Client ID --> paste as comment in app.js for ios like with web
+
+
+        - For Android:
+            - back on the 'Credentials' screen --> 'Create Credentials' --> 'OAuth client ID' 
+            - select application type as android of course
+            - go to app.json, under android find "package": "defaultName" --> copy and past that into
+            'package name' on google cloud
+            - need a "SHA-1 certificate fingerprint"
+             - to get this, run expo credentials:manager
+             - this will ask you for which platform, select android of course --> select 'y'
+             - Then, select 'Update upload Keystore' --> 'Generate new Keystore' --> 'Go back to experience overview'
+             - SHA-1 should now pop up as "Google Certificate Hash(SHA-1): someNumber" --> copy that someNumber
+             - hit ctrl + c to stop running
+             - paste 'someNumber' into 'SHA-1 certificate fingerprint in google cloud"
+             - select "Create"
+             - copy Client ID and paste is as a comment in app.js
+             
+
+
 
 
         
