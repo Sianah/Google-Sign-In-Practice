@@ -3,5 +3,14 @@ Steps
 2. cd appName
 3. npx expo install expo-auth-session expo-crypto expo-web-browser react-native-web react-dom 
  @expo/webpack-config @react-native-async-storage/async-storage
+4. Go to google cloud(need google account)
+    - Create a new project
+        - Name it. Dont pick industry or whatever the second question was
+    - Press 'select project' once it's done being created
+    - Need an OAuth client ID for applications
+        - in this case, we'll need three (one for android, ios and web)
+    - Go to navigation on the left side of the screen and select 'APIs and Services' --> 'Enabled APIs and Services'
+    
+
      
     
