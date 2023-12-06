@@ -10,7 +10,21 @@ Steps
     - Need an OAuth client ID for applications
         - in this case, we'll need three (one for android, ios and web)
     - Go to navigation on the left side of the screen and select 'APIs and Services' --> 'Enabled APIs and Services'
-    
+    - Select 'Credentials' then at the top select 'Create credentials' --> 'OAuth client ID'
+    - Select 'Configure consent screen' --> 'External' --> 'Create'
+    - Enter app name and support email(where user can contact you or someone else)
+    - Scroll all the way down to 'Developer contact information' and enter another email
+    - Select 'Save and Continue'
+        - If you run into error, include the project ID into the app name as well (i.e like with vigilant-willow-407302 for google tutorial)
+    - Select 'Save and Continue' on Scopes screen as well
+    - Select 'Save and Continue' on Test Users as well if there are no test Users
+    - If everything looks right, scroll all the way down and select 'Back to Dashboard'
+    - Go back to 'Credentials' --> 'Create credentials' --> 'OAuth client ID'
+    - From drop down menu, select application type
+        - For Web:
+         - 
+
+
 
      
     
