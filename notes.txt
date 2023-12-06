@@ -63,6 +63,11 @@ Steps
              - copy Client ID and paste is as a comment in app.js
 
 5. In app.js, import "import * as WebBrowser from "expo-web-browser";"
+    - then type "WebBrowser.maybeCompleteAuthSession();"
+6. In app.js, import "import * as Google from 'expo-auth-session/providers/google' "
+7. Then, also import "import AsyncStorage from "@react-native-async-storage/async-storage"; "
+8. Then, also import "import * as React from 'react'; "
+9. "const[userInfo, setUserInfo] = React.useState(null);" 
 
 
 
