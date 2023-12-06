@@ -31,6 +31,16 @@ Steps
          instead of the localhost one
          - OAuth Client credentials and such should appear now
          - copy the Client ID --> in app.js, paste it as a comment (i.e. //508324923582-colqt82dke17aa8n8n51msqric08j9sm.apps.googleusercontent.com)
+         - Stop the server and gather the ID's for android and IOS next
+         - close out of 'OAuth Client Created' box by pressing 'ok'
+
+         -For IOS:
+            - back on the 'Credentials' screen --> 'Create Credentials' --> 'OAuth client ID' 
+            - select application type as IOS of course
+            - need bundle ID
+                - run npx expo prebuild
+                - keep package name as default that appears once ran so just hit 'enter' 
+
 
         
 
