@@ -21,8 +21,19 @@ Steps
     - If everything looks right, scroll all the way down and select 'Back to Dashboard'
     - Go back to 'Credentials' --> 'Create credentials' --> 'OAuth client ID'
     - From drop down menu, select application type
-        - For Web:
-         - 
+        - For Web application:
+         - under 'Authorized Java Origins' press 'Add URL'
+          - to get URL/run web, run npx expo --web --https
+          - copy URL link and paste it into 'Authorized Java Origins" --> 'URL 1'(in this case, its https://localhost:19006)
+          - under 'Authorized redirect URLs' press 'Add URL' and paste that same url link over to here as well
+         - once done, press 'Create' 
+         - if the app is already deployed, you will need to provide your domain and/or the actual link for your web app 
+         instead of the localhost one
+         - OAuth Client credentials and such should appear now
+         - copy the Client ID --> in app.js, paste it as a comment (i.e. //508324923582-colqt82dke17aa8n8n51msqric08j9sm.apps.googleusercontent.com)
+
+        
+
 
 
 
